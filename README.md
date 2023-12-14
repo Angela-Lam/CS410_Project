@@ -1,5 +1,5 @@
 # CS410 Project: Categrorical Text Classfication based on keywords
-Angela Lam,
+Angela Lam, puiyuyl2z@illinois.edu
 
 Tingcong Liu, tl17@illinois.edu
 # How to run it:
