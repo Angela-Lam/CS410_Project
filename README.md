@@ -74,3 +74,11 @@ We instead The Modularity Optimization algorithm tries to detect communities in 
 g = ig.Graph()
 levels = g.community_multilevel()
 ```
+
+## Output
+We obtained 2 datasets, one with the background of the Ebola virus, the other with the background of the Hong Kong protests. The model performs evaluation on the corpus to generate sequences of keywords surrounding a key event. 
+Here are some example outputs:
+```bash
+['legislative_council', 'evil_law', 'victoria_park']
+['public_anger', 'young_people', 'civil_human_rights_front', 'prodemocracy_umbrella_movement', 'hong_kong_chief_executive_carrie', 'hong_kongers']
+['water_cannon', 'antigovernment_protesters', 'water_cannons', 'gas_masks', 'hong_kong_university', 'university_campus', 'escalating_violence', 'police_officer', 'hong_kong_polytechnic_university'] ```
