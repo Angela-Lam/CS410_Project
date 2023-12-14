@@ -71,7 +71,7 @@ We use peak phrases we got from last step (peak_phrases),word to document count(
 ```bash
 events = key_features.generate_key_event_features(peak_phrases, w2dc, doc2time, min_t)
 ```
-We use apply a lightweight community detection algorithm (louvain algorithm).
+We instead The Modularity Optimization algorithm tries to detect communities in the graph.
 ```bash
 g = ig.Graph()
 levels = g.community_multilevel()
