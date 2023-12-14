@@ -48,4 +48,14 @@ w2dc: word to document count.
  doc2time, min_t, num_t, all_t,doc_sents,doc_emb, vocabulary,w2tc,w2dc, docs= data_processing.process_data(args, config)
 ```
 
-data_processing.py: this 
+## Peak Phrase Detection
+
+We use our self innovated tf-idf to culculate each word's score.
+```bash
+wt2score[(w,t)] = tf_itf(w, t, w2tc, num_t, window_size=3)[0]
+```
+After that we sort score from large to small. It stops when score = 0 or the number of phrases >= 500.
+```bash
+for pt, s in sorted(wt2score.items(), key=lambda x: x[1], reverse=True):
+   peak_phrases.append(pt)
+```
