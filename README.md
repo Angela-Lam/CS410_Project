@@ -54,6 +54,9 @@ We use our self innovated tf-idf to culculate each word's score.
 ```bash
 wt2score[(w,t)] = tf_itf(w, t, w2tc, num_t, window_size=3)[0]
 ```
+Instead of using normal tf-idf, we got some ideas from EtypeClus to generate salient word:
+
+$Salient(w) = (1+log(freq(w))^2)log(\frac{N_bs}{bsf(w)})$
 After that we sort score from large to small. It stops when score = 0 or the number of phrases >= 500.
 ```bash
 for pt, s in sorted(wt2score.items(), key=lambda x: x[1], reverse=True):
