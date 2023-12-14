@@ -23,5 +23,10 @@ python eval.py --key_event_file data/hkprotest/output.json --ground_truth data/h
 ```
 
 # Going through each part
-410proj.py: it calls the helper files to generate classification and post-classification processing, and saves results. 
+This project can be divided into 6 parts:
+
+1. It first preprocessed data by using data_processing.py.
+
+2. It used
+
 data_processing.py: this 
