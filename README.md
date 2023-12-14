@@ -1,20 +1,56 @@
-README for the Python Script
-Description
-This Python script is designed to analyze and classify documents based on their content and temporal features. It employs a combination of natural language processing (NLP) techniques, graph theory, and machine learning (specifically Support Vector Classification) to identify key phrases and events from a collection of documents.
+# A Todo List demo App
+This is a todo list demo designed for CS411. 
+# Tutorial
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sY1lLGe7ECA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Dependencies
-Python 3.x
-Libraries: os, argparse, numpy, igraph, sklearn, re, json, tqdm, itertools, inflect, nltk, datefinder, dateutil
+A comprehensive writeup is avaliable [here](https://tichung.com/blog/2021/20200323_flask/).
 
-Key Features
-Pre-processing: Constructs a vocabulary from the documents, filtering out stop words and punctuation, and calculates word counts.
-TF-IDF Filtering: Filters words based on Term Frequency-Inverse Document Frequency (TF-IDF) scores.
-Peak Phrase Detection: Identifies key phrases that are significantly prevalent over specific time periods.
-Key Event Feature Generation: Groups peak phrases into clusters representing key events, using graph-based community detection.
-Document Classification: Classifies documents into these events using a Support Vector Classifier (SVC).
-Post-Classification Processing: Further processes the classified documents to refine the event-document mapping.
+## Requirements
+```
+python >= 3.5
+```
 
-Usage
-To run the script, you will need to supply various command-line arguments related to the input data:
-to produce output: python 410proj.py --data hkprotest
-to evaluate for precision, recall and F1 score: python eval.py     --key_event_file data/hkprotest/output.json     --ground_truth data/hkprotest/doc2event_id.txt     --eval_top 10
+## Getting started
+```bash
+git clone https://github.com/a2975667/flask-gcp-mysql-demo.git
+cd flask-gcp-mysql-demo
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+export FLASK_APP = app
+flask run
+```
+
+## Setting up GCP
+Create a `app.yaml` file in the root folder with the following content:
+```yaml
+runtime: python38 # or another supported version
+
+instance_class: F1
+
+env_variables:
+  MYSQL_USER: <user_name> # please put in your credentials
+  MYSQL_PASSWORD: <user_pw> # please put in your credentials
+  MYSQL_DB: <database_name> # please put in your credentials
+  MYSQL_HOST: <database_ip> # please put in your credentials
+
+handlers:
+# Matches requests to /images/... to files in static/images/...
+- url: /img
+  static_dir: static/img
+
+- url: /script
+  static_dir: static/script
+
+- url: /styles
+  static_dir: static/styles
+```
+
+Setting up the deployment
+```bash
+curl https://sdk.cloud.google.com | bash
+gcloud components install app-engine-python
+gcloud config set project cs411-sp21
+gcloud auth login
+gcloud app deploy
+```
