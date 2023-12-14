@@ -28,6 +28,22 @@ This project can be divided into 6 parts:
 ## Preprocess data 
 
 This project preprocesses data by constructing many small repositories to store the data.
+
+doc2time: document id and its corresponding date published.
+
+min_t: the eariest time the event happens.
+
+num_t: the total time the event happens.
+
+doc_sents: each document is a list, the element of the list is a sentense.
+
+doc_emb: the embedding of each document by finding the embedding of the top 3 sentense.
+
+vocabulary: word that appears at least 10 times and is not puctuations and stop words.
+
+w2tc: word to date count
+
+w2dc: word to document count.
 ```bash
  doc2time, min_t, num_t, all_t,doc_sents,doc_emb, vocabulary,w2tc,w2dc, docs= data_processing.process_data(args, config)
 ```
