@@ -22,6 +22,6 @@ python 410proj.py --data hkprotest
 python eval.py --key_event_file data/hkprotest/output.json --ground_truth data/hkprotest/doc2event_id.txt --eval_top 10
 ```
 
-# Going  through each part
+# Going through each part
 410proj.py: it calls the helper files to generate classification and post-classification processing, and saves results. 
 data_processing.py: this 
