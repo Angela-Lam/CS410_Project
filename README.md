@@ -1,10 +1,8 @@
 # CS410 Project: Categrorical Text Classfication based on keywords
 Angela Lam, puiyuyl2@illinois.edu
-
 Tingcong Liu, tl17@illinois.edu
-# How to run it:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sY1lLGe7ECA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+# How to run it:
 A comprehensive writeup is avaliable [here](https://tichung.com/blog/2021/20200323_flask/).
 
 ## Requirements
