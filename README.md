@@ -66,6 +66,13 @@ for pt, s in sorted(wt2score.items(), key=lambda x: x[1], reverse=True):
 
 ## Key Event Feature Generation
 
+We use peak phrases we got from last step (peak_phrases),word to document count(w2dc),document id and its corresponding date published(doc2time) and the eariest time the event happens(min_t). We use these as parameters to find events by applying graph algorithm.
+
 ```bash
 events = key_features.generate_key_event_features(peak_phrases, w2dc, doc2time, min_t)
+```
+We use apply a lightweight community detection algorithm (louvain algorithm).
+```bash
+g = ig.Graph()
+levels = g.community_multilevel()
 ```
