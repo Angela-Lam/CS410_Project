@@ -3,9 +3,6 @@ Angela Lam, puiyuyl2@illinois.edu
 
 Tingcong Liu, tl17@illinois.edu
 
-# How to run it:
-A comprehensive writeup is avaliable [here](https://tichung.com/blog/2021/20200323_flask/).
-
 ## Requirements
 ```
 python >= 3.5
@@ -84,4 +81,9 @@ Here are some example outputs:
 ['water_cannon', 'antigovernment_protesters', 'water_cannons', 'gas_masks', 'hong_kong_university', 'university_campus', 'escalating_violence', 'police_officer', 'hong_kong_polytechnic_university']
 ```
 
-Each list of keywords are descriptions of subevents generated across the documents. For example, the first list describes people ('legislative_council'), object/view point ('evil_law'), and location ('victoria_park'). The second descibes protests that's led by civil human rights front (CHRF), a pro-democracy organization based on Hong Kong. Prodemocracy umbrella movement is a political movement characterized by peaceful sitins using umbrellas as a tool. Related to CHRF and the Prodemocracy umbrella movement, are 'public_anger', 'young_people','hong_kong_chief_executive_carrie', 'hong_kongers'. The third describes the violence happening in universities in Hong Kong, involving the usage of gas masks and water cannons by the police. 
+Each list of keywords are descriptions of subevents generated across the documents. For example, the first list describes people ('legislative_council'), object/view point ('evil_law'), and location ('victoria_park'). 
+
+
+The second descibes protests that's led by civil human rights front (CHRF), a pro-democracy organization based on Hong Kong. Prodemocracy umbrella movement is a political movement characterized by peaceful sitins using umbrellas as a tool. Related to CHRF and the Prodemocracy umbrella movement, are 'public_anger', 'young_people','hong_kong_chief_executive_carrie', 'hong_kongers'. 
+
+The third describes the violence happening in universities in Hong Kong, involving the usage of gas masks and water cannons by the police. 
