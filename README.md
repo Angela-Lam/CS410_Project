@@ -16,9 +16,10 @@ pip install numpy python-igraph scikit-learn tqdm inflect nltk datefinder dateut
 ```bash
 git clone https://github.com/Angela-Lam/CS410_Project
 cd CS410_Project
-run the script to produce output:
+#run the script to produce output:
 python 410proj.py --data hkprotest
-run the evaluation : python eval.py --key_event_file data/hkprotest/output.json --ground_truth data/hkprotest/doc2event_id.txt --eval_top 10
+#run the evaluation :
+python eval.py --key_event_file data/hkprotest/output.json --ground_truth data/hkprotest/doc2event_id.txt --eval_top 10
 ```
 
 ## Going  through each part
