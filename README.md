@@ -63,3 +63,9 @@ After that we sort score from large to small. It stops when score = 0 or the num
 for pt, s in sorted(wt2score.items(), key=lambda x: x[1], reverse=True):
    peak_phrases.append(pt)
 ```
+
+## Key Event Feature Generation
+
+```bash
+events = key_features.generate_key_event_features(peak_phrases, w2dc, doc2time, min_t)
+```
