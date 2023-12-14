@@ -1,4 +1,4 @@
-# CS410 Project: Categrorical Text Classfication based on keywords
+# CS410 Project: Sub Event Key Word Detection From Larger Event Corpus
 Angela Lam, puiyuyl2@illinois.edu
 
 Tingcong Liu, tl17@illinois.edu
