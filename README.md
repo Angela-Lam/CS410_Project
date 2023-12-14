@@ -25,7 +25,7 @@ python eval.py --key_event_file data/hkprotest/output.json --ground_truth data/h
 # Going through each part
 This project can be divided into 6 parts:
 
-1. It first preprocessed data by using data_processing.py.
+## Preprocessed data 
 
 2. It used
 
