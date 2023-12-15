@@ -92,8 +92,8 @@ The third describes the violence happening in universities in Hong Kong, involvi
 
 # On Ebola data
 ```bash
-['war_crimes_tribunal', 'confirmed_ebola_cases', 'politico_newspaper', 'united_states', 'ebola_countries']
+['public_health', 'medecins_sans', 'secretary_general', 'ebola_crisis', 'security_council']
 
 ['ebola_vaccine', 'in_west_africa', 'public_health_agency', 'world_bank']
 ```
- 
+The first one describes the world's response to the Ebola crisis, with involvement from secretary general and security council. The second focuses on efforts to combat the virus in west Africa with involvement from the World Bank, and the development of the vaccine. 
