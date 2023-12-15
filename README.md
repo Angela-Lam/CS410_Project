@@ -52,7 +52,7 @@ We use our self innovated tf-idf to culculate each word's score.
 ```bash
 wt2score[(w,t)] = tf_itf(w, t, w2tc, num_t, window_size=3)[0]
 ```
-Instead of using normal tf-idf, we got some ideas from EtypeClus to generate salient word:
+Instead of using normal tf-idf, we got some ideas from the paper "Corpus-based Open-Domain Event Type Induction" (EMNLP 2021) to generate salient word:
 
 $$Salient(w) = (1+log(freq(w))^2)log(\frac{N_{bs}}{bsf(w)})$$
 
@@ -100,3 +100,7 @@ The third describes the violence happening in universities in Hong Kong, involvi
 ['ebola_vaccine', 'in_west_africa', 'public_health_agency', 'world_bank']
 ```
 The first one describes the world's response to the Ebola crisis, with involvement from secretary general and security council. The second focuses on efforts to combat the virus in west Africa with involvement from the World Bank, and the development of the vaccine. 
+
+# Acknowledge
+
+This project is inspired from paper "Unsupervised Key Event Detection from Massive Text Corpora", published in KDD 2022.
