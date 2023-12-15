@@ -72,8 +72,10 @@ g = ig.Graph()
 levels = g.community_multilevel()
 ```
 
-## Output
+## Output 
 We obtained 2 datasets, one with the background of the Ebola virus, the other with the background of the Hong Kong protests. The model performs evaluation on the corpus to generate sequences of keywords surrounding a key event. 
+
+# On Hong Kong Protest data
 Here are some example outputs:
 ```bash
 ['legislative_council', 'evil_law', 'victoria_park']
@@ -87,3 +89,11 @@ Each list of keywords are descriptions of subevents generated across the documen
 The second descibes protests that's led by civil human rights front (CHRF), a pro-democracy organization based on Hong Kong. Prodemocracy umbrella movement is a political movement characterized by peaceful sitins using umbrellas as a tool. Related to CHRF and the Prodemocracy umbrella movement, are 'public_anger', 'young_people','hong_kong_chief_executive_carrie', 'hong_kongers'. 
 
 The third describes the violence happening in universities in Hong Kong, involving the usage of gas masks and water cannons by the police. 
+
+# On Ebola data
+```bash
+['war_crimes_tribunal', 'confirmed_ebola_cases', 'politico_newspaper', 'united_states', 'ebola_countries']
+
+['ebola_vaccine', 'in_west_africa', 'public_health_agency', 'world_bank']
+```
+ 
