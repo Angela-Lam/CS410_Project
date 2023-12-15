@@ -101,6 +101,6 @@ The third describes the violence happening in universities in Hong Kong, involvi
 ```
 The first one describes the world's response to the Ebola crisis, with involvement from secretary general and security council. The second focuses on efforts to combat the virus in west Africa with involvement from the World Bank, and the development of the vaccine. 
 
-# Acknowledge
+# Acknowledgement
 
 This project is inspired from paper "Unsupervised Key Event Detection from Massive Text Corpora", published in KDD 2022.
