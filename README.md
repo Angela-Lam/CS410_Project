@@ -14,6 +14,9 @@ pip install numpy python-igraph scikit-learn tqdm inflect nltk datefinder dateut
 git clone https://github.com/Angela-Lam/CS410_Project
 cd CS410_Project
 #run the script to produce output:
+# for ebola dataset
+python 410proj.py --data ebola
+# for protest dataset
 python 410proj.py --data hkprotest
 ```
 
