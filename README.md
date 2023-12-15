@@ -3,6 +3,8 @@ Angela Lam, puiyuyl2@illinois.edu
 
 Tingcong Liu, tl17@illinois.edu
 
+Here is our video: [here](https://youtu.be/neIK4BGpfAk)
+
 ## Requirements
 ```
 python >= 3.5
