@@ -19,7 +19,7 @@ cd CS410_Project
 # for ebola dataset
 python 410proj.py --data ebola
 
-# To run hkprotest, you should first go into hkprotest dataset and unzip the json file.
+# Since the json file in hkprotest is bigger than 25 MB, to run hkprotest, you should first go into hkprotest dataset and unzip the json file.
 cd data
 cd hkprotest
 unzip doc2sents-0.9-tokenized.id.json.zip
