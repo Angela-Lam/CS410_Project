@@ -18,6 +18,8 @@ cd CS410_Project
 #run the script to produce output:
 # for ebola dataset
 python 410proj.py --data ebola
+
+To run hkprotest, you should first go into hkprotest dataset and unzip the json file.
 # for protest dataset
 python 410proj.py --data hkprotest
 ```
