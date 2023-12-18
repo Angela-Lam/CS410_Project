@@ -20,6 +20,9 @@ cd CS410_Project
 python 410proj.py --data ebola
 
 To run hkprotest, you should first go into hkprotest dataset and unzip the json file.
+cd data
+cd hkprotest
+unzip doc2sents-0.9-tokenized.id.json.zip
 # for protest dataset
 python 410proj.py --data hkprotest
 ```
